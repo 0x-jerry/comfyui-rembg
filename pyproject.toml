@@ -1,0 +1,13 @@
+[project]
+name = "ComfyUI-Rembg"
+description = "Rembg nodes for ComfyUI"
+version = "1.0.0"
+license = "MIT"
+
+[project.urls]
+Repository = "https://github.com/0x-jerry/comfyui-rembg"
+
+[tool.comfy]
+PublisherId = "jerry"
+DisplayName = "ComfyUI Rembg"
+Icon = ""
