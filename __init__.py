@@ -47,23 +47,6 @@ class RemoveImageBackgroundNode:
     CATEGORY = "Rembg"
     TITLE = "Image Remove Background"
 
-
-    # def process(self, image, model):
-    #     session = model
-
-    #     image = image.permute([0, 3, 1, 2])
-    #     output = []
-    #     for img in image:
-    #         img = T.ToPILImage()(img)
-    #         img = remove(img, session=session)
-    #         output.append(T.ToTensor()(img))
-
-    #     output = torch.stack(output, dim=0)
-    #     output = output.permute([0, 2, 3, 1])
-    #     mask = output[:, :, :, 3] if output.shape[3] == 4 else torch.ones_like(output[:, :, :, 0])
-
-    #     return(output, mask,)
-
     def process(self, image, model):
         session = model
 
