@@ -8,7 +8,7 @@ Many thanks to the author of **[rembg-comfyui-node](https://github.com/Jcd1230/r
 
 ## How to use
 
-1. Install this extension
+1. Install nodes
 
 ```
 git clone https://github.com/0x-jerry/comfyui-rembg.git
