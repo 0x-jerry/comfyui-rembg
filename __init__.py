@@ -1,6 +1,7 @@
 import torch
 import torchvision.transforms.v2 as T
 import folder_paths
+import os
 from rembg import new_session, remove
 
 
@@ -102,6 +103,10 @@ class RemoveImageBackgroundNode:
             mask,
         )
 
+
+folder_paths.add_model_folder_path(
+    "rembg", os.path.join(folder_paths.models_dir, "rembg")
+)
 
 # A dictionary that contains all nodes you want to export with their names
 NODE_CLASS_MAPPINGS = {
